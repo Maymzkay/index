@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 450px;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}
+.logo p{
+    font-weight: bolder;
+    font-size: 25px;
+    margin-right: 40px;
+}
+.title p{
+    font-size: 40px;
+    justify-content: center;
+}
+.links a{
+    color: white;
+    padding: 10px 16px;
+    font-size: 18px;
+    text-decoration: none;
+    ma
+}
+.links a:hover{
+    border-bottom: 1px solid lightgreen;
+    transition: 0.5s;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact p{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+.title p{
+    text-align: center;
+    font-size: 40px;
+}
+button{
+    margin-top: 30px;
+    padding: 12px 40px;
+    background: transparent;
+    color: antiquewhite;
+    font-size: 18px;
+    border: 1px solid lightslategray;
+}
+/* end of header */
+.content{
+    padding: 30px;
+    display: flex;
+}
+.content .propose{
+    height: 400px;
+    width: 50%;
+    padding: 30px;
+}
+.content .propose p{
+    margin-bottom: 15px;
+    line-height: 1.3;
+    text-align: justify;
+    color: #808080;
+    font-size: 16px;
+}
+.content .propose .we{
+    color: black;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 30px;
+}
+h3, h4{
+    color: orange;
+}
+a{
+    text-decoration: none;
+}
+.content .img{
+    height: 400px;
+    width: 50%;
+    background:url('./img/IMG_2343.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.works{
+    height: 700px;
+    margin-top: 20px;
+    padding: 40px;
+}
+.works .title P{
+    text-align: center;
+    font-size: 40px;
+}
+.works .title h3{
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.works .subtitle{
+    margin-top: 150px;
+}
+.works .subtitle h4{
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+.works .subtitle p{
+    font-size: 40px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.cards .card{
+    width: 22%;
+    height: 350px;
+    /* background: teal; */
+}
+.cards .card .fa-home, .fa-users, .fa-edit, .fa-cog{
+    font-size: 50px;
+    color: #606060;
+}.cards .card .interior, .home, .office, .drawings{
+    font-weight: bold;
+    margin: 25px 0;
+    color: black !important;
+}
+.cards .card p{
+    color: #808080;
+    line-height: 1.3;
+}
+.teamsection{
+    height: 550px;
+}
+.team .meetourteam{
+    color: black;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 8px;
+}
+.team button{
+    color: black;
+    border: 1px solid black;
+    margin-left: 1400px;
+    margin-top: 20px;
+}
+.teamimages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.teamimages p{
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    margin-top: 400px;
+}
+.teamimages .image1{
+    height: 500px;
+    width: 32.3%;
+    background:url('./img/IMG_2348.JPG');
+    background-position: center;
+    background-size: cover;
+}
+.teamimages .image2{
+    height: 500px;
+    width: 32.3%;
+    background: url('./img/IMG_2352.JPG');
+    background-position: center;
+    background-size: cover;
+}
+.teamimages .image3{
+    height: 500px;
+    width: 32.3%;
+    background: url('./img/IMG_2354.JPG');
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    height: 100vh;
+    background: black;
+    color: white;
+    padding: 50px;
+}
+footer p{
+    margin-top: 8px;
+    color: white;
+    line-height: 1.3;
+}
+footer .socials{
+    margin-top: 40px;
+}
+footer a{
+    color: white;
+    font-size: 35px;
+    margin: 20px;
+}
+footer .fa-telegram{
+    margin-top: 30px;
+}
+footer .copy{
+    margin-top: 30px;
+}
+footer .copy p{
+    text-align: center;
+    font-weight: bold;
+}
+/* media responsive */
+@media screen and (max-width:600px){
+    header{
+        height: 100vh;
+    }
+    header .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    header .nav .links a{
+        display: block;
+        text-align: center;
+    }
+    header .logo{
+        margin-left: 35px;
+        margin-bottom: 20px;
+    }
+    header .logo p{
+        text-align: center;
+    }
+    header .title{
+        margin-top: 200px;
+    }
+    header .title p{
+        font-size: 30px;
+    }
+    .content{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .content .propose{
+        width: 100%;
+    }
+    .content .img{
+        width: 100%;
+        margin-top: 150px;
+    }
+    .works .subtitle{
+        margin-top: 50px;
+    }
+    .worksdescription .cards{
+        flex-direction: column;
+    }
+    .worksdescription .cards .card{
+        width: 100%;
+        height: 200px;
+    }
+    .teamsection .team{
+        margin-top: 500px;
+    }
+    .teamsection .team p{
+        font-size: 25px;
+    }
+    .teamsection .teamimages{
+    display: flex;
+    flex-direction: column;
+    }
+    .teamimages .image1{
+        width: 100%
+    }
+    .teamimages .image2{
+        width: 100%;
+    }
+    .teamimages .image3{
+        width: 100%;
+    }
+}
